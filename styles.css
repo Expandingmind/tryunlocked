@@ -1495,16 +1495,83 @@ body {
   box-shadow: 0 30px 70px rgba(0, 0, 0, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.06);
 }
 
+.review-stars {
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
+  margin-bottom: 14px;
+}
+
+.review-stars svg {
+  width: 16px;
+  height: 16px;
+  fill: #fbbf24;
+  filter: drop-shadow(0 0 6px rgba(251, 191, 36, 0.35));
+}
+
+.review-stars svg.is-empty {
+  fill: rgba(255, 255, 255, 0.12);
+  filter: none;
+}
+
+.snap-testimonial-card__title {
+  margin: 0 0 8px;
+  font-size: 15px;
+  font-weight: 700;
+  color: #ffffff;
+  letter-spacing: -0.01em;
+}
+
 .snap-testimonial-card__quote {
-  margin: 0 0 10px;
+  margin: 0 0 18px;
   font-size: 14px;
-  color: #f3f6ff;
+  line-height: 1.55;
+  color: #d4d8e0;
+}
+
+.snap-testimonial-card__author {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding-top: 14px;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.snap-avatar {
+  width: 38px;
+  height: 38px;
+  border-radius: 999px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  font-weight: 700;
+  color: #ffffff;
+  letter-spacing: 0.02em;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.35), inset 0 1px 0 rgba(255, 255, 255, 0.15);
+  flex-shrink: 0;
+}
+
+.snap-testimonial-card__name {
+  margin: 0;
+  font-size: 13px;
+  font-weight: 600;
+  color: #ffffff;
+  line-height: 1.2;
 }
 
 .snap-testimonial-card__meta {
-  margin: 0;
+  margin: 2px 0 0;
   font-size: 12px;
   color: #9ca3af;
+  line-height: 1.2;
+}
+
+.snap-section__subtitle {
+  margin: 8px 0 0;
+  font-size: 14px;
+  color: #9ca3af;
+  text-align: center;
 }
 
 .snap-support {
