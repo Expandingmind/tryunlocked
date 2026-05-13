@@ -1409,16 +1409,14 @@ body {
 
 .how-step__number {
   position: absolute;
-  top: 8px;
+  top: 4px;
   right: 18px;
-  font-size: 64px;
-  font-weight: 800;
-  letter-spacing: -0.05em;
+  font-size: 76px;
+  font-weight: 900;
+  letter-spacing: -0.06em;
   line-height: 1;
-  background: linear-gradient(180deg, rgba(47, 138, 253, 0.4), rgba(47, 138, 253, 0.03));
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
+  color: #2f8afd;
+  text-shadow: 0 0 30px rgba(47, 138, 253, 0.5);
   z-index: 2;
   pointer-events: none;
 }
