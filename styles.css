@@ -77,7 +77,10 @@ body {
   font-family: var(--font-sans);
   line-height: 1.5;
   color: var(--text-main);
-  background: radial-gradient(circle at top, #020617 0, #020617 20%, #020617 40%, #000 100%);
+  background: #0a0a0a;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .page--dark {
@@ -166,8 +169,11 @@ body {
   text-decoration: none;
   font-size: 14px;
   color: var(--text-muted);
-  padding: 6px 0;
+  padding: 10px 4px;
   transition: color 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
 }
 
 .nav__link:hover {
@@ -1567,12 +1573,6 @@ body {
   line-height: 1.2;
 }
 
-.snap-section__subtitle {
-  margin: 8px 0 0;
-  font-size: 14px;
-  color: #9ca3af;
-  text-align: center;
-}
 
 .snap-support {
   max-width: 520px;
@@ -1862,13 +1862,37 @@ body {
 
   .snap-header__inner {
     gap: 10px;
-    padding: 5px 5px 5px 14px;
+    padding: 6px 6px 6px 16px;
     width: calc(100% - 12px);
   }
 
   .snap-header__button {
-    padding: 8px 14px;
+    padding: 10px 16px;
     font-size: 13px;
+    min-height: 36px;
+  }
+
+  /* Bigger tap targets on mobile */
+  .btn {
+    min-height: 44px;
+    padding: 12px 22px;
+  }
+
+  .btn--lg {
+    min-height: 48px;
+    padding: 14px 24px;
+    font-size: 15px;
+  }
+
+  /* Easier-to-tap footer links */
+  .snap-footer__link {
+    padding: 6px 0;
+    margin-bottom: 2px;
+  }
+
+  .snap-support__link {
+    display: inline-block;
+    padding: 4px 0;
   }
 
   /* Section padding compresses */
