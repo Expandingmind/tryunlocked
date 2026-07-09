@@ -157,9 +157,18 @@ a {
   width: auto;
 }
 
-.store-badge--hero svg,
 .store-badge--cta svg {
-  height: 52px;
+  height: 56px;
+}
+
+.store-badge--hero svg {
+  height: 64px;
+}
+
+@media (min-width: 640px) {
+  .store-badge--hero svg {
+    height: 80px;
+  }
 }
 
 /* --------------------------------------------------------------------------
@@ -260,20 +269,6 @@ a {
   align-items: center;
   gap: 24px;
   flex-wrap: wrap;
-}
-
-.hero__secondary-link {
-  font-size: 15px;
-  font-weight: 500;
-  color: var(--ink-700);
-  border-bottom: 1px solid var(--ring);
-  padding-bottom: 2px;
-  transition: color 0.15s ease, border-color 0.15s ease;
-}
-
-.hero__secondary-link:hover {
-  color: var(--ink-900);
-  border-color: var(--ink-500);
 }
 
 .hero__meta {
